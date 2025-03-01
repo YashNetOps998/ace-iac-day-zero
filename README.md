@@ -10,9 +10,9 @@ This repository builds out the following infrastructure for the Aviatrix ACE IaC
 
 Component | Version
 --- | ---
-Aviatrix Controller | UserConnect-6.7.1319 (6.7)
-Aviatrix Terraform Provider | > 2.22.1
-Terraform | > 1.1.0
+Aviatrix Controller | UserConnect-6.9.822 (6.9)
+Aviatrix Terraform Provider | > 2.24.4
+Terraform | > 1.2.0
 AWS Terraform Provider | > 4.0
 Azure Terraform Provider | > 3.0.0
 
