@@ -62,9 +62,9 @@ module "aws_spoke_bastion" {
 }
 
 output "aws_spoke1_bastion_public_ip" {
-  value = module.aws_spoke_bastion.public_ip
+  value = module.aws_spoke_bastion[0].public_ip
 }
 
 output "aws_spoke1_bastion_private_ip" {
-  value = module.aws_spoke_bastion.private_ip
+  value = module.aws_spoke_bastion[0].private_ip
 }
