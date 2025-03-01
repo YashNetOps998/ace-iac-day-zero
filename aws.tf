@@ -51,7 +51,7 @@ module "aws_spoke_bastion" {
   name                        = "${var.aws_spoke1_name}-bastion"
   ami                         = data.aws_ami.ubuntu.id
   key_name                    = var.ace_ec2_key_name
-  instance_count              = 1
+  count              = 1
   subnet_id                   = module.aws_spoke_1.vpc.public_subnets[0].subnet_id
   vpc_security_group_ids      = [module.security_group_1.this_security_group_id]
   associate_public_ip_address = true
